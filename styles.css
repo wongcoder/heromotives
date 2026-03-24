@@ -225,7 +225,12 @@ p { color: var(--text-muted); margin-bottom: 1rem; }
     margin-bottom: 2.5rem;
     color: #e2e8f0;
 }
-.hero-actions { display: flex; gap: 1rem; }
+.hero-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 600px;
+}
 
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
@@ -343,7 +348,7 @@ p { color: var(--text-muted); margin-bottom: 1rem; }
     .hero { min-height: 550px; }
     
     /* Stack hero buttons */
-    .hero-actions { flex-direction: column; gap: 1rem; width: 100%; }
+    .hero-actions { display: flex; flex-direction: column; gap: 1rem; width: 100%; }
     .hero-actions a { width: 100%; text-align: center; }
     
     .section { padding-top: 4rem; padding-bottom: 4rem; }
