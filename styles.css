@@ -88,6 +88,7 @@ p { color: var(--text-muted); margin-bottom: 1rem; }
     font-weight: 700;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
+    line-height: 1;
     transition: var(--transition);
     display: inline-flex;
     align-items: center;
@@ -129,6 +130,7 @@ p { color: var(--text-muted); margin-bottom: 1rem; }
     font-weight: 700;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
+    line-height: 1;
     transition: var(--transition);
     display: inline-flex;
     align-items: center;
