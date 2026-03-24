@@ -163,6 +163,11 @@ p { color: var(--text-muted); margin-bottom: 1rem; }
     border-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Force Lucide Action Icons to be White */
+.btn-primary svg, .btn-primary i, .btn-outline svg, .btn-outline i {
+    stroke: #ffffff !important;
+}
+
 /* Hero Section */
 .hero {
     position: relative;
