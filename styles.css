@@ -188,8 +188,10 @@ p { color: var(--text-muted); margin-bottom: 1rem; }
 .hero-content {
     position: relative;
     z-index: 2;
-    padding: 0 4rem;
-    max-width: 900px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
     transform: translateY(20px);
     animation: fadeUp 1s ease forwards;
 }
