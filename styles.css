@@ -132,7 +132,7 @@ p { color: var(--text-muted); margin-bottom: 1rem; }
     min-height: 700px;
     display: flex;
     align-items: center;
-    background-image: url('https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&q=80&w=2000');
+    background-image: url('images/s2000_hero.jpg');
     background-size: cover;
     background-position: center;
 }
