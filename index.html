@@ -12,22 +12,19 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Icons (Lucide) -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="i18n.js"></script>
 </head>
 
 <body>
     <!-- Top Navigation -->
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">
-                <span class="en-text">HERO<span class="accent">MOTIVES</span></span>
-                <span class="jp-text" style="display:none;">ヒロモー<span class="accent">ティブ</span></span>
+            <div class="logo" data-i18n="nav.logo">
+                HERO<span class="accent">MOTIVES</span>
             </div>
             <div class="nav-links">
-                <a href="#about" class="en-text">About Hiro</a>
-                <a href="#about" class="jp-text" style="display:none;">自己紹介</a>
-
-                <a href="#content" class="en-text">Content</a>
-                <a href="#content" class="jp-text" style="display:none;">動画コンテンツ</a>
+                <a href="#about" data-i18n="nav.about">About Hiro</a>
+                <a href="#content" data-i18n="nav.content">Content</a>
 
                 <button id="langToggle" class="btn-lang" onclick="toggleLanguage()">
                     EN / JP
@@ -46,35 +43,27 @@
     <header class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="en-text">Build, Drive, <br><span class="accent">Understand Better.</span></span>
-                <span class="jp-text" style="display:none;">走りを極め、<br><span class="accent">理解を深める。</span></span>
+            <h1 class="hero-title" data-i18n="hero.title">
+                Build, Drive, <br><span class="accent">Understand Better.</span>
             </h1>
-            <p class="hero-subtitle">
-                <span class="en-text">ASE Master & Honda Certified Technician sharing S2000 builds, tuning setups, and
-                    DIY repair tutorials from Arizona. <strong>Soon offering local workshop services!</strong></span>
-                <span class="jp-text"
-                    style="display:none;">アリゾナから、ASE認定マスターテキスト＆ホンダ認定整備士がS2000のビルド、チューニング、実践的なDIY修理チュートリアルをお届けします。<strong>※近々アリゾナ州内でのローカル出張整備サービスも開始予定！</strong></span>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+                ASE Master & Honda Certified Technician sharing S2000 builds, tuning setups, and DIY repair tutorials from Arizona. <strong>Soon offering local workshop services!</strong>
             </p>
             <div class="hero-actions">
                 <a href="#about" class="btn-primary" style="font-size: 1.1rem;">
-                    <span class="en-text">Learn More</span>
-                    <span class="jp-text" style="display:none;">詳細を見る</span>
+                    <span data-i18n="hero.btn.learn">Learn More</span>
                 </a>
                 <a href="https://www.youtube.com/@heromotives" target="_blank" class="btn-outline" style="font-size: 1.1rem;">
                     <img src="https://cdn.simpleicons.org/youtube/white" width="20" height="20" alt="YouTube" style="display:block; margin:0;" />
-                    <span class="en-text">YouTube Channel</span>
-                    <span class="jp-text" style="display:none;">YouTubeチャンネル</span>
+                    <span data-i18n="hero.btn.youtube">YouTube Channel</span>
                 </a>
                 <a href="https://instagram.com/hhhjdm" target="_blank" class="btn-outline" style="font-size: 1.1rem;">
                     <img src="https://cdn.simpleicons.org/instagram/white" width="20" height="20" alt="Instagram" style="display:block; margin:0;" />
-                    <span class="en-text">Follow @hhhjdm</span>
-                    <span class="jp-text" style="display:none;">Instagramをフォロー</span>
+                    <span data-i18n="hero.btn.instagram">Follow @hhhjdm</span>
                 </a>
                 <div class="btn-outline" style="font-size: 1.1rem; opacity: 0.5; pointer-events: none; background: rgba(0,0,0,0.2);">
                     <i data-lucide="calendar" style="width:20px; height:20px; stroke:#fff;"></i>
-                    <span class="en-text">Book Appointment (Coming Soon)</span>
-                    <span class="jp-text" style="display:none;">予約する (準備中)</span>
+                    <span data-i18n="hero.btn.book">Book Appointment (Coming Soon)</span>
                 </div>
             </div>
         </div>
@@ -88,57 +77,32 @@
                 <div class="glass-badge">
                     <i data-lucide="award"></i>
                     <div>
-                        <b class="en-text">Master Tech</b>
-                        <b class="jp-text" style="display:none;">マスターテック</b>
+                        <b data-i18n="about.badge">Master Tech</b>
                         <br>
                         <small>Honda & Toyota</small>
                     </div>
                 </div>
             </div>
             <div class="about-text">
-                <h2 class="section-title">
-                    <span class="en-text">Meet Hiro</span>
-                    <span class="jp-text" style="display:none;">メカニック紹介</span>
-                </h2>
+                <h2 class="section-title" data-i18n="about.title">Meet Hiro</h2>
                 <div class="divider"></div>
                 <p style="font-style: italic; color: #fff; font-weight: 600; margin-bottom: 1.5rem;">
-                    <i data-lucide="quote"
-                        style="width: 16px; height: 16px; color: var(--accent-red); margin-right: 0.5rem; vertical-align: middle;"></i>
-                    <span class="en-text">"Do you see someone skilled in their work? They will serve before kings." –
-                        Proverbs 22:29</span>
-                    <span class="jp-text" style="display:none;">「自分の仕事に熟練した人を見よ。その人は王たちの前に立つ。」 – 箴言 22:29</span>
+                    <i data-lucide="quote" style="width: 16px; height: 16px; color: var(--accent-red); margin-right: 0.5rem; vertical-align: middle;"></i>
+                    <span data-i18n="about.quote">"Do you see someone skilled in their work? They will serve before kings." – Proverbs 22:29</span>
                 </p>
-                <p>
-                    <span class="en-text">
-                        Hi, I’m Hiro — ASE Master & Honda Certified Technician, and Toyota Expert Certified. On this
-                        channel, I share Honda S2000 builds, K24 swap tuning, Link G4X ECU setup, and track racing
-                        content from Arizona.
-                    </span>
-                    <span class="jp-text" style="display:none;">
-                        こんにちは、Hiroです。ASEマスター、ホンダ認定整備士、そしてトヨタのエキスパート認定資格を持っています。このチャンネルでは、アメリカのアリゾナ州から愛車のS2000ビルド、K24エンジンスワップ、Link G4X ECUのセッティング、そしてリアルなサーキット走行の様子を配信しています。
-                    </span>
+                <p data-i18n="about.p1">
+                    Hi, I’m Hiro — ASE Master & Honda Certified Technician, and Toyota Expert Certified. On this channel, I share Honda S2000 builds, K24 swap tuning, Link G4X ECU setup, and track racing content from Arizona.
                 </p>
-                <p>
-                    <span class="en-text">
-                        You’ll also find DIY repair tutorials, diagnostics, and mechanic tips based on real shop
-                        experience. My goal is to help enthusiasts and aspiring mechanics understand, build, and drive
-                        better. <br><br><b>Good news for locals:</b> I am also preparing to offer hands-on tuning and
-                        repair services within Arizona very soon!
-                    </span>
-                    <span class="jp-text" style="display:none;">
-                        さらに、実際の現場での経験に基づいたDIY修理のチュートリアル、トラブルシューティング、メカニック向けのプロのヒントを紹介しています。車好きな方や整備士を目指す方々が、より深く仕組みを理解し、最高の一台を造り上げ、走りを極めるサポートをするのが私の目標です。<br><br><b>【お知らせ】</b> まもなくアリゾナ州内にお住まいの方向けに、実車でのチューニングや整備サービスも開始予定です！
-                    </span>
+                <p data-i18n="about.p2">
+                    You’ll also find DIY repair tutorials, diagnostics, and mechanic tips based on real shop experience. My goal is to help enthusiasts and aspiring mechanics understand, build, and drive better. <br><br><b>Good news for locals:</b> I am also preparing to offer hands-on tuning and repair services within Arizona very soon!
                 </p>
-                <div
-                    style="margin-top: 2rem; background: rgba(255,255,255,0.05); padding: 1.5rem; border-left: 4px solid var(--accent-red); border-radius: 0 8px 8px 0;">
+                <div style="margin-top: 2rem; background: rgba(255,255,255,0.05); padding: 1.5rem; border-left: 4px solid var(--accent-red); border-radius: 0 8px 8px 0;">
                     <h4 style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
                         <i data-lucide="wrench"></i>
-                        <span class="en-text">Core Topics</span>
-                        <span class="jp-text" style="display:none;">配信トピック</span>
+                        <span data-i18n="about.topics.title">Core Topics</span>
                     </h4>
                     <p style="color: var(--text-primary); font-weight: 600; font-size: 0.95rem; margin-bottom: 0;">
-                        Honda S2000 | K24 Swap | Link G4X ECU | Track Racing | DIY Car Repair | JDM Builds | Motorsports
-                        Engineering
+                        Honda S2000 | K24 Swap | Link G4X ECU | Track Racing | DIY Car Repair | JDM Builds | Motorsports Engineering
                     </p>
                 </div>
             </div>
@@ -148,69 +112,36 @@
     <!-- Services / Content Section -->
     <section class="section dark-bg" id="content">
         <div class="container">
-            <h2 class="section-title center">
-                <span class="en-text">Channel Content</span>
-                <span class="jp-text" style="display:none;">配信コンテンツ</span>
-            </h2>
+            <h2 class="section-title center" data-i18n="content.title">Channel Content</h2>
             <div class="divider center-div"></div>
 
             <div class="services-grid">
                 <!-- Card 1 -->
                 <div class="glass-card">
                     <div class="icon-circle"><i data-lucide="flag"></i></div>
-                    <h3>
-                        <span class="en-text">Track Racing & S2000</span>
-                        <span class="jp-text" style="display:none;">サーキット走行 ＆ S2000</span>
-                    </h3>
-                    <p>
-                        <span class="en-text">Taking the S2000 to the track, testing suspension set-ups, and sharing
-                            on-board footage from Arizona raceways.</span>
-                        <span class="jp-text"
-                            style="display:none;">愛車S2000でのサーキット走行、足回りセッティングのテスト、そしてアリゾナのサーキットからの迫力ある車載映像をお届けします。</span>
-                    </p>
+                    <h3 data-i18n="card1.title">Track Racing & S2000</h3>
+                    <p data-i18n="card1.desc">Taking the S2000 to the track, testing suspension set-ups, and sharing on-board footage from Arizona raceways.</p>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="glass-card">
                     <div class="icon-circle"><i data-lucide="settings"></i></div>
-                    <h3>
-                        <span class="en-text">K24 Swaps & Tuning</span>
-                        <span class="jp-text" style="display:none;">K24スワップ ＆ チューニング</span>
-                    </h3>
-                    <p>
-                        <span class="en-text">In-depth guides on K-series engine swaps, standalone ECU configurations
-                            like Link G4X, and dyno tuning.</span>
-                        <span class="jp-text" style="display:none;">Kシリーズ・エンジンスワップの徹底解説、Link G4X等のフルコン（スタンドアローンECU）のセットアップ、ダイノでの現車合わせチューニング。</span>
-                    </p>
+                    <h3 data-i18n="card2.title">K24 Swaps & Tuning</h3>
+                    <p data-i18n="card2.desc">In-depth guides on K-series engine swaps, standalone ECU configurations like Link G4X, and dyno tuning.</p>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="glass-card">
                     <div class="icon-circle"><i data-lucide="wrench"></i></div>
-                    <h3>
-                        <span class="en-text">DIY Repair & Diagnostics</span>
-                        <span class="jp-text" style="display:none;">DIY修理 ＆ 故障診断</span>
-                    </h3>
-                    <p>
-                        <span class="en-text">Real-world mechanic tips, step-by-step repair guides, and deep dives into
-                            diagnosing modern vehicle issues.</span>
-                        <span class="jp-text"
-                            style="display:none;">実践的なメカニックの知恵、ステップバイステップで学べる修理ガイド、そして現代の車の複雑なトラブル診断を深掘りします。</span>
-                    </p>
+                    <h3 data-i18n="card3.title">DIY Repair & Diagnostics</h3>
+                    <p data-i18n="card3.desc">Real-world mechanic tips, step-by-step repair guides, and deep dives into diagnosing modern vehicle issues.</p>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="glass-card">
                     <div class="icon-circle"><i data-lucide="book-open"></i></div>
-                    <h3>
-                        <span class="en-text">Motorsports Engineering</span>
-                        <span class="jp-text" style="display:none;">モータースポーツ・エンジニアリング</span>
-                    </h3>
-                    <p>
-                        <span class="en-text">Breaking down complex automotive systems, aerodynamics, and performance
-                            JDM build blueprints.</span>
-                        <span class="jp-text" style="display:none;">複雑な自動車システムの仕組み、エアロダイナミクス、パフォーマンスを究めるJDMビルドの設計思想を分かりやすく解説します。</span>
-                    </p>
+                    <h3 data-i18n="card4.title">Motorsports Engineering</h3>
+                    <p data-i18n="card4.desc">Breaking down complex automotive systems, aerodynamics, and performance JDM build blueprints.</p>
                 </div>
             </div>
         </div>
@@ -220,39 +151,29 @@
     <footer class="footer" id="contact">
         <div class="container footer-grid">
             <div>
-                <h3 class="logo">
-                    <span class="en-text">HERO<span class="accent">MOTIVES</span></span>
-                    <span class="jp-text" style="display:none;">ヒロモー<span class="accent">ティブ</span></span>
+                <h3 class="logo" data-i18n="nav.logo">
+                    HERO<span class="accent">MOTIVES</span>
                 </h3>
-                <p style="opacity: 0.7; margin-top: 1rem;">
-                    <span class="en-text">Understanding, Building, and Driving Better.</span>
-                    <span class="jp-text" style="display:none;">深く理解し、最高の一台を造り、走りを極める。</span>
+                <p style="opacity: 0.7; margin-top: 1rem;" data-i18n="footer.motto">
+                    Understanding, Building, and Driving Better.
                 </p>
             </div>
             <div>
-                <h4>
-                    <span class="en-text">Social & Contact</span>
-                    <span class="jp-text" style="display:none;">SNS ＆ お問い合わせ</span>
-                </h4>
+                <h4 data-i18n="footer.social">Social & Contact</h4>
                 <p style="margin-bottom: 0.5rem;">
-                    <a href="https://www.youtube.com/@heromotives" target="_blank"
-                        style="color:var(--text-primary); text-decoration:none; display:flex; align-items:center; gap:0.5rem;">
+                    <a href="https://www.youtube.com/@heromotives" target="_blank" style="color:var(--text-primary); text-decoration:none; display:flex; align-items:center; gap:0.5rem;">
                         <img src="https://cdn.simpleicons.org/youtube/white" width="16" height="16" alt="YouTube" style="display:block; margin:0;" /> @heromotives
                     </a>
                 </p>
                 <p style="margin-bottom: 1rem;">
-                    <a href="https://instagram.com/hhhjdm" target="_blank"
-                        style="color:var(--text-primary); text-decoration:none; display:flex; align-items:center; gap:0.5rem;">
+                    <a href="https://instagram.com/hhhjdm" target="_blank" style="color:var(--text-primary); text-decoration:none; display:flex; align-items:center; gap:0.5rem;">
                         <img src="https://cdn.simpleicons.org/instagram/white" width="16" height="16" alt="Instagram" style="display:block; margin:0;" /> @hhhjdm
                     </a>
                 </p>
                 <p>Based in Arizona</p>
             </div>
             <div>
-                <h4>
-                    <span class="en-text">Specialties</span>
-                    <span class="jp-text" style="display:none;">専門分野</span>
-                </h4>
+                <h4 data-i18n="footer.specialties">Specialties</h4>
                 <p>Honda S2000 Builds</p>
                 <p>K24 Engine Swaps</p>
                 <p>Link G4X ECU Tuning</p>
@@ -264,32 +185,8 @@
     </footer>
 
     <script>
-        // Initialize Lucide Icons (for remaining icons like quote, tag, award)
+        // Initialize Lucide Icons
         lucide.createIcons();
-
-        // Simple Bilingual Toggle Script
-        let currentLang = 'en';
-        function toggleLanguage() {
-            currentLang = currentLang === 'en' ? 'jp' : 'en';
-
-            const enElements = document.querySelectorAll('.en-text');
-            const jpElements = document.querySelectorAll('.jp-text');
-
-            if (currentLang === 'jp') {
-                enElements.forEach(el => el.style.display = 'none');
-                jpElements.forEach(el => el.style.display = 'inline-block');
-                // Fix paragraphs with block-level spacing if needed
-                document.querySelectorAll('p > .jp-text').forEach(el => el.style.display = 'inline');
-                document.querySelectorAll('h1 .jp-text').forEach(el => el.style.display = 'inline-block');
-                document.querySelectorAll('h4 .jp-text').forEach(el => el.style.display = 'inline');
-            } else {
-                jpElements.forEach(el => el.style.display = 'none');
-                enElements.forEach(el => el.style.display = 'inline-block');
-                document.querySelectorAll('p > .en-text').forEach(el => el.style.display = 'inline');
-                document.querySelectorAll('h1 .en-text').forEach(el => el.style.display = 'inline-block');
-                document.querySelectorAll('h4 .en-text').forEach(el => el.style.display = 'inline');
-            }
-        }
     </script>
 </body>
 
