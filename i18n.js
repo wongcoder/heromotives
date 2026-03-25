@@ -14,11 +14,13 @@ const i18n = {
         "hero.btn.book": "Book Appointment (Coming Soon)",
         
         "about.badge": "Master Tech",
+        "about.badge.sub": "Honda & Toyota",
         "about.title": "Meet Hiro",
         "about.quote": "\"Do you see someone skilled in their work? They will serve before kings.\" – Proverbs 22:29",
         "about.p1": "Hi, I’m Hiro — ASE Master & Honda Certified Technician, and Toyota Expert Certified. On this channel, I share Honda S2000 builds, K24 swap tuning, Link G4X ECU setup, and track racing content from Arizona.",
         "about.p2": "You’ll also find DIY repair tutorials, diagnostics, and mechanic tips based on real shop experience. My goal is to help enthusiasts and aspiring mechanics understand, build, and drive better. <br><br><b>Good news for locals:</b> I am also preparing to offer hands-on tuning and repair services within Arizona very soon!",
         "about.topics.title": "Core Topics",
+        "about.topics.list": "Honda S2000 | K24 Swap | Link G4X ECU | Track Racing | DIY Car Repair | JDM Builds | Motorsports Engineering",
         
         "content.title": "Channel Content",
         "card1.title": "Track Racing & S2000",
@@ -32,7 +34,12 @@ const i18n = {
         
         "footer.motto": "Understanding, Building, and Driving Better.",
         "footer.social": "Social & Contact",
-        "footer.specialties": "Specialties"
+        "footer.specialties": "Specialties",
+        "footer.based": "Based in Arizona",
+        "footer.spec1": "Honda S2000 Builds",
+        "footer.spec2": "K24 Engine Swaps",
+        "footer.spec3": "Link G4X ECU Tuning",
+        "footer.copyright": "&copy; 2026 Heromotives. All Rights Reserved."
     },
     "jp": {
         "nav.logo": "ヒロモー<span class=\"accent\">ティブ</span>",
@@ -49,11 +56,13 @@ const i18n = {
         "hero.btn.book": "予約する (準備中)",
         
         "about.badge": "マスターテック",
+        "about.badge.sub": "ホンダ ＆ トヨタ",
         "about.title": "メカニック紹介",
         "about.quote": "「自分の仕事に熟練した人を見よ。その人は王たちの前に立つ。」 – 箴言 22:29",
         "about.p1": "こんにちは、Hiroです。ASEマスター、ホンダ認定整備士、そしてトヨタのエキスパート認定資格を持っています。このチャンネルでは、アメリカのアリゾナ州から愛車のS2000ビルド、K24エンジンスワップ、Link G4X ECUのセッティング、そしてリアルなサーキット走行の様子を配信しています。",
         "about.p2": "さらに、実際の現場での経験に基づいたDIY修理のチュートリアル、トラブルシューティング、メカニック向けのプロのヒントを紹介しています。車好きな方や整備士を目指す方々が、より深く仕組みを理解し、最高の一台を造り上げ、走りを極めるサポートをするのが私の目標です。<br><br><b>【お知らせ】</b> まもなくアリゾナ州内にお住まいの方向けに、実車でのチューニングや整備サービスも開始予定です！",
         "about.topics.title": "配信トピック",
+        "about.topics.list": "Honda S2000 | K24スワップ | Link G4X ECU | サーキット走行 | DIY修理 | JDMビルド | モータースポーツ・エンジニアリング",
         
         "content.title": "配信コンテンツ",
         "card1.title": "サーキット走行 ＆ S2000",
@@ -67,7 +76,12 @@ const i18n = {
         
         "footer.motto": "深く理解し、最高の一台を造り、走りを極める。",
         "footer.social": "SNS ＆ お問い合わせ",
-        "footer.specialties": "専門分野"
+        "footer.specialties": "専門分野",
+        "footer.based": "アリゾナ州拠点",
+        "footer.spec1": "Honda S2000 ビルド",
+        "footer.spec2": "K24 エンジンスワップ",
+        "footer.spec3": "Link G4X ECU チューニング",
+        "footer.copyright": "&copy; 2026 Heromotives. 無断複写・転載を禁じます。"
     }
 };
 
