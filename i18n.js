@@ -11,7 +11,7 @@ const i18n = {
         "hero.btn.learn": "Learn More",
         "hero.btn.youtube": "YouTube Channel",
         "hero.btn.instagram": "Follow @hhhjdm",
-        "hero.btn.book": "Wrench with Hiro!",
+        "hero.btn.book": "Wrench with Hiro! (Coming Soon)",
 
         "about.badge": "Master Tech",
         "about.badge.sub": "Honda & Toyota",
@@ -53,7 +53,7 @@ const i18n = {
         "hero.btn.learn": "詳細を見る",
         "hero.btn.youtube": "YouTubeチャンネル",
         "hero.btn.instagram": "Instagramをフォロー",
-        "hero.btn.book": "Hiroと整備する！(予約)",
+        "hero.btn.book": "Hiroと整備する！ (準備中)",
 
         "about.badge": "マスターテック",
         "about.badge.sub": "ホンダ ＆ トヨタ",
