@@ -5,14 +5,14 @@ const i18n = {
         "nav.content": "Content",
         "nav.youtube": "YouTube",
         "nav.instagram": "Instagram",
-        
+
         "hero.title": "Build, Drive, <br><span class=\"accent\">Understand Better.</span>",
         "hero.subtitle": "ASE Master & Honda Certified Technician sharing S2000 builds, tuning setups, and DIY repair tutorials from Arizona. <strong>Soon offering local workshop services!</strong>",
         "hero.btn.learn": "Learn More",
         "hero.btn.youtube": "YouTube Channel",
         "hero.btn.instagram": "Follow @hhhjdm",
         "hero.btn.book": "Book Appointment (Coming Soon)",
-        
+
         "about.badge": "Master Tech",
         "about.badge.sub": "Honda & Toyota",
         "about.title": "Meet Hiro",
@@ -21,7 +21,7 @@ const i18n = {
         "about.p2": "You’ll also find DIY repair tutorials, diagnostics, and mechanic tips based on real shop experience. My goal is to help enthusiasts and aspiring mechanics understand, build, and drive better. <br><br><b>Good news for locals:</b> I am also preparing to offer hands-on tuning and repair services within Arizona very soon!",
         "about.topics.title": "Core Topics",
         "about.topics.list": "Honda S2000 | K24 Swap | Link G4X ECU | Track Racing | DIY Car Repair | JDM Builds | Motorsports Engineering",
-        
+
         "content.title": "Channel Content",
         "card1.title": "Track Racing & S2000",
         "card1.desc": "Taking the S2000 to the track, testing suspension set-ups, and sharing on-board footage from Arizona raceways.",
@@ -31,7 +31,7 @@ const i18n = {
         "card3.desc": "Real-world mechanic tips, step-by-step repair guides, and deep dives into diagnosing modern vehicle issues.",
         "card4.title": "Motorsports Engineering",
         "card4.desc": "Breaking down complex automotive systems, aerodynamics, and performance JDM build blueprints.",
-        
+
         "footer.motto": "Understanding, Building, and Driving Better.",
         "footer.social": "Social & Contact",
         "footer.specialties": "Specialties",
@@ -42,19 +42,19 @@ const i18n = {
         "footer.copyright": "&copy; 2026 Heromotives. All Rights Reserved."
     },
     "jp": {
-        "nav.logo": "ヒロモー<span class=\"accent\">ティブ</span>",
+        "nav.logo": "ヒロ<span class=\"accent\">モーティブ</span>",
         "nav.about": "自己紹介",
         "nav.content": "動画コンテンツ",
         "nav.youtube": "YouTube",
         "nav.instagram": "Instagram",
-        
+
         "hero.title": "走りを極め、<br><span class=\"accent\">理解を深める。</span>",
         "hero.subtitle": "アリゾナから、ASE認定マスターテキスト＆ホンダ認定整備士がS2000のビルド、チューニング、実践的なDIY修理チュートリアルをお届けします。<strong>※近々アリゾナ州内でのローカル出張整備サービスも開始予定！</strong>",
         "hero.btn.learn": "詳細を見る",
         "hero.btn.youtube": "YouTubeチャンネル",
         "hero.btn.instagram": "Instagramをフォロー",
         "hero.btn.book": "予約する (準備中)",
-        
+
         "about.badge": "マスターテック",
         "about.badge.sub": "ホンダ ＆ トヨタ",
         "about.title": "メカニック紹介",
@@ -63,7 +63,7 @@ const i18n = {
         "about.p2": "さらに、実際の現場での経験に基づいたDIY修理のチュートリアル、トラブルシューティング、メカニック向けのプロのヒントを紹介しています。車好きな方や整備士を目指す方々が、より深く仕組みを理解し、最高の一台を造り上げ、走りを極めるサポートをするのが私の目標です。<br><br><b>【お知らせ】</b> まもなくアリゾナ州内にお住まいの方向けに、実車でのチューニングや整備サービスも開始予定です！",
         "about.topics.title": "配信トピック",
         "about.topics.list": "Honda S2000 | K24スワップ | Link G4X ECU | サーキット走行 | DIY修理 | JDMビルド | モータースポーツ・エンジニアリング",
-        
+
         "content.title": "配信コンテンツ",
         "card1.title": "サーキット走行 ＆ S2000",
         "card1.desc": "愛車S2000でのサーキット走行、足回りセッティングのテスト、そしてアリゾナのサーキットからの迫力ある車載映像をお届けします。",
@@ -73,7 +73,7 @@ const i18n = {
         "card3.desc": "実践的なメカニックの知恵、ステップバイステップで学べる修理ガイド、そして現代の車の複雑なトラブル診断を深掘りします。",
         "card4.title": "モータースポーツ・エンジニアリング",
         "card4.desc": "複雑な自動車システムの仕組み、エアロダイナミクス、パフォーマンスを究めるJDMビルドの設計思想を分かりやすく解説します。",
-        
+
         "footer.motto": "深く理解し、最高の一台を造り、走りを極める。",
         "footer.social": "SNS ＆ お問い合わせ",
         "footer.specialties": "専門分野",
@@ -90,7 +90,7 @@ let currentLang = 'en';
 function setLanguage(lang) {
     currentLang = lang;
     document.documentElement.lang = lang;
-    
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (i18n[lang] && i18n[lang][key]) {
